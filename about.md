@@ -1,8 +1,8 @@
 ---
-title: About
+title: About Me
 permalink: /about/
 ---
 
-<p class="heavy-title"><a href="http://github.com/thinker3197/Ink">Ink</a> is a simple & minimalistic theme for <a href="http://jekyllrb.com">Jekyll</a>, a static site generator.</p>
+<p class="heavy-title"> I'm Rails developer and Bots for Forex, working in the market since 2014 with web and desktop applications, to improve every application performance and design.</p>
 
->Designed and developed by [@thinker3197](https://github.com/thinker3197).
+>Designed and developed by Henrique Max.

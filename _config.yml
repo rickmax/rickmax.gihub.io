@@ -1,5 +1,5 @@
 name:               "Henrique Max"
-description:        "This is a blog about me and professions expericences"
+description:        "Ruby, Phyton, Elixir, Mql4/Mql5, Forex Trading, e etc"
 
 url:                ""
 author:             "Henrique Max"
@@ -8,13 +8,12 @@ gravatar_hash:      "15390d57ab160cc93935c5e9f68b1b31"
 twitter:            "Rique_Max"
 email:              "rickmaxg3@hotmail.com"
 github:             "rickmax"
-pinterest:          ""
 linkedin:           "henrique-max-321040a3"
 facebook:           "henrique.max.73"
 
 disqus_shortname:   "Henrique"
 
-background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
+background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-1474.jpg"
 
 paginate:           5
 paginate_path:      "/page:num/"
