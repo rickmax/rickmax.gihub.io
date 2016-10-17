@@ -870,3 +870,22 @@ tbody tr:nth-child(odd) th {
 
 
 /* Literal.Number.Integer.Long */
+
+.share-page {
+    text-align: center;
+    background: #8be891;
+    color: #009999;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 1.5 * 4vw;
+
+    a {
+        font-weight: 700;
+        color: #044404;
+        margin-left: 10px;
+
+        &:hover {
+            border-bottom: 1px dashed #fff;
+        }
+    }
+}
