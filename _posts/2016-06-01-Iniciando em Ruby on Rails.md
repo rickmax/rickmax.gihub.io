@@ -29,4 +29,4 @@ Dicas pessoais para te poupar tempo:
 > Uma outra opção é a utilzação do Vagrant, fica um pouco mais rápido. <b><a href="https://nandovieira.com.br/usando-o-vagrant-como-ambiente-de-desenvolvimento-no-windows"> 
   Usando O Vagrant no Windows, com Nando Vieira<br>
 
-Estes foram os meus passos, logicamente existem vários outros muito bons, espero que ajude.☺
+Estes foram os meus passos, logicamente existem vários outros muito bons, mas espero estes ajude você.☺
