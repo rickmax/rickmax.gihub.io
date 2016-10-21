@@ -1,0 +1,51 @@
+name:               "Henrique Max"
+description:        "Ruby, Python, Elixir, Mql4/Mql5, Forex Trading, e etc"
+
+url:                ""
+url1:               "http://henriquemax.com.br"
+author:             "Henrique Max"
+email:              "rickmaxg3@hotmail.com"
+gravatar_hash:      "15390d57ab160cc93935c5e9f68b1b31"
+twitter:            "Rique_Max"
+email:              "rickmaxg3@hotmail.com"
+github:             "rickmax"
+linkedin:           "henrique-max-321040a3"
+facebook:           "henrique.max.73"
+
+hdsistemax_shortname:   "Henrique"
+
+background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-1474.jpg"
+
+paginate:           5
+paginate_path:      "/page:num/"
+
+baseurl:            ""
+permalink:          :title/
+
+markdown:           kramdown
+
+nav:
+  - name:           "About"
+    href:           "/about"
+  - name:           "Download"
+    href:           "/releases"
+
+sass:
+  style:            :compressed
+
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+gems:
+  - jekyll-paginate
