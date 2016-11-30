@@ -25,7 +25,7 @@ Ou instale você mesmo:
 
 ### Exemplos de uso
 
-Para obter o extenso de um número, utilize GExtenso.numero.
+Para obter o extenso de um número, utilize Extenso.numero.
 
     irb
 
