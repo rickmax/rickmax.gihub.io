@@ -46,4 +46,4 @@ Para obter o extenso de um valor monetário, utilize GExtenso.moeda.
 
 ### três mil, quinhentas e setenta pesetas e oitenta e dois cêntimos
 
-<p>Se você leu até aqui, obrigado, use seja feliz!</p>
+<p>Se você leu até aqui, obrigado, use e seja feliz!</p>
