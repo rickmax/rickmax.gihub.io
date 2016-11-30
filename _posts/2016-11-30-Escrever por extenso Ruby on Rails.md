@@ -11,7 +11,7 @@ Mas emfim com ajuda de uma lógica originalmete feita em PHP pelo Professor Faus
 Se interessar a mais alguém e quiser fazer parte desse projeto contribuindo para melhorar cada vez mais tai: <b><a href="https://github.com/rickmax/extensobr/">ExtensoBr</a></b>, sem mais segue a baixo como usar. :D 
 </p>
 
-## Instalação
+### Instalação
 
 Adicionando em sua Gemfile:
 
@@ -23,7 +23,7 @@ Ou instale você mesmo:
 
     $ gem install extensobr
 
-## Exemplos de uso
+### Exemplos de uso
 
 Para obter o extenso de um número, utilize GExtenso.numero.
 
@@ -38,10 +38,10 @@ Para obter o extenso de um valor monetário, utilize GExtenso.moeda.
 
     require 'Extenso.rb'
  
-## IMPORTANTE: este método recebe um valor inteiro(int), para a contagem das casas decimais!
+### IMPORTANTE: este método recebe um valor inteiro(int), para a contagem das casas decimais!
     
     puts Extenso.moeda(15402) # cento e cinquenta e quatro reais e dois centavos
     puts Extenso.moeda(47)   # quarenta e sete centavos
     puts Extenso.moeda(357082, 2, ['peseta', 'pesetas', Extenso::GENERO_FEM], ['cêntimo', 'cêntimos', Extenso::GENERO_MASC])
 
-## três mil, quinhentas e setenta pesetas e oitenta e dois cêntimos
+### três mil, quinhentas e setenta pesetas e oitenta e dois cêntimos
