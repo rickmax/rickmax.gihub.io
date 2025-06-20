@@ -1,0 +1,98 @@
+# Portuguese (Brazil) locale file for Chirpy theme
+# This file is used to translate the theme's text to Portuguese (Brazil)
+
+# Site metadata
+site:
+  meta:
+    author: "Henrique Max"
+    description: "Blog pessoal sobre desenvolvimento, trading e tecnologia"
+    keywords: "blog, ruby, python, elixir, trading, forex"
+    generator: "Jekyll"
+    robots: "index, follow"
+    googlebot: "index, follow"
+    google: "notranslate"
+
+# Navigation
+nav:
+  home: "Início"
+  categories: "Categorias"
+  tags: "Tags"
+  archives: "Arquivos"
+  about: "Sobre"
+
+# Sidebar
+sidebar:
+  avatar:
+    alt: "Avatar"
+  follow_me:
+    title: "Siga-me"
+    subtitle: "Redes Sociais"
+  toc:
+    title: "Índice"
+    empty: "Nenhum índice disponível"
+
+# Footer
+footer:
+  powered_by: "Powered by"
+  theme: "Chirpy"
+  copyright: "© 2024 Henrique Max. Todos os direitos reservados."
+
+# Posts
+post:
+  reading_time:
+    one: "1 minuto de leitura"
+    other: "{{ count }} minutos de leitura"
+  word_count:
+    one: "1 palavra"
+    other: "{{ count }} palavras"
+  date:
+    format: "%d/%m/%Y"
+  categories:
+    title: "Categorias"
+  tags:
+    title: "Tags"
+  share:
+    title: "Compartilhar"
+  related_posts:
+    title: "Posts Relacionados"
+  prev_next:
+    prev: "Post Anterior"
+    next: "Próximo Post"
+
+# Search
+search:
+  placeholder: "Pesquisar..."
+  no_results: "Nenhum resultado encontrado"
+
+# Pagination
+pagination:
+  prev: "Anterior"
+  next: "Próximo"
+  page: "Página"
+  of: "de"
+
+# Categories
+categories:
+  title: "Categorias"
+  empty: "Nenhuma categoria encontrada"
+
+# Tags
+tags:
+  title: "Tags"
+  empty: "Nenhuma tag encontrada"
+
+# Archives
+archives:
+  title: "Arquivos"
+  empty: "Nenhum post encontrado"
+
+# Comments
+comments:
+  title: "Comentários"
+  empty: "Nenhum comentário ainda. Seja o primeiro!"
+
+# Theme mode
+theme_mode:
+  light: "Modo Claro"
+  dark: "Modo Escuro"
+  auto: "Automático" 

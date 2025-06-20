@@ -1,0 +1,32 @@
+# The tabs on the sidebar
+# Format: { title: string, url: string, icon: string, order: number }
+#   title: The title of the tab
+#   url: The relative URL of the tab, must be a valid URL
+#   icon: The Font Awesome icon name, If empty, the icon will not be displayed, see
+#         https://fontawesome.com/v5/search?o=r&m=free
+#   order: The order of the tabs, optional. If not set, the tabs will be ordered by the order of the items in this file
+
+- title: Home
+  url: /
+  icon: fas fa-home
+  order: 1
+
+- title: Categories
+  url: /categories/
+  icon: fas fa-th-list
+  order: 2
+
+- title: Tags
+  url: /tags/
+  icon: fas fa-tags
+  order: 3
+
+- title: Archives
+  url: /archives/
+  icon: fas fa-archive
+  order: 4
+
+- title: About
+  url: /about/
+  icon: fas fa-user
+  order: 5 

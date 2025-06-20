@@ -1,5 +1,8 @@
 ---
-title: Desenvolvendo Robôs para Forex-Primeiros Passos
+title: Desenvolvendo Robôs para Forex - Primeiros Passos
+date: 2016-06-07 00:00:00 +0000
+categories: [Forex, Trading]
+tags: [forex, trading, mql4, bots, automatização]
 ---
 
 <p class="lead">Porquê todo desenvolvedor deveria programar bots para o Forex?</p>

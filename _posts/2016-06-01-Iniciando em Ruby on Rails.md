@@ -1,8 +1,8 @@
 ---
-title:        "Iniciando em Ruby on Rails"
-description:  "Como iniciei em Ruby e Rails"
-image:        "http://placehold.it/400x200"
-author:       "Jhonathan"
+title: Iniciando em Ruby on Rails
+date: 2016-06-01 00:00:00 +0000
+categories: [Ruby, Rails]
+tags: [ruby, rails, desenvolvimento, tutorial]
 ---
 
 Este post é para ajudar aqueles que como eu teve muitos problema para iniciar nessa maravilhosa linguagem.
