@@ -1,0 +1,138 @@
+---
+layout: null
+sitemap:
+  exclude: 'yes'
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Home pages for each language -->
+  {% for lang in site.languages %}
+    <url>
+      <loc>
+        {% if lang == site.default_lang %}
+          {{ site.url }}/
+        {% else %}
+          {{ site.url }}/{{ lang }}/
+        {% endif %}
+      </loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+      
+      <!-- Alternate language versions -->
+      {% for alt_lang in site.languages %}
+        <xhtml:link 
+          rel="alternate" 
+          hreflang="{{ alt_lang }}"
+          href="{% if alt_lang == site.default_lang %}{{ site.url }}/{% else %}{{ site.url }}/{{ alt_lang }}/{% endif %}" />
+      {% endfor %}
+      <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/" />
+    </url>
+  {% endfor %}
+
+  <!-- Posts for each language -->
+  {% for lang in site.languages %}
+    {% assign posts_path = '_i18n/' | append: lang | append: '/_posts' %}
+    {% for post in site.data.i18n[lang].posts %}
+      <url>
+        <loc>
+          {% if lang == site.default_lang %}
+            {{ site.url }}{{ post.url }}
+          {% else %}
+            {{ site.url }}/{{ lang }}{{ post.url }}
+          {% endif %}
+        </loc>
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        
+        <!-- Alternate language versions for posts -->
+        {% for alt_lang in site.languages %}
+          <xhtml:link 
+            rel="alternate" 
+            hreflang="{{ alt_lang }}"
+            href="{% if alt_lang == site.default_lang %}{{ site.url }}{{ post.url }}{% else %}{{ site.url }}/{{ alt_lang }}{{ post.url }}{% endif %}" />
+        {% endfor %}
+        <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ post.url }}" />
+      </url>
+    {% endfor %}
+  {% endfor %}
+
+  <!-- Static pages for each language -->
+  {% for lang in site.languages %}
+    {% assign pages = site.data.i18n[lang].pages | default: site.pages %}
+    {% for page in pages %}
+      {% unless page.sitemap.exclude == "yes" or page.sitemap.exclude == true %}
+        <url>
+          <loc>
+            {% if lang == site.default_lang %}
+              {{ site.url }}{{ page.url }}
+            {% else %}
+              {{ site.url }}/{{ lang }}{{ page.url }}
+            {% endif %}
+          </loc>
+          <lastmod>{{ page.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>
+          <changefreq>{{ page.sitemap.changefreq | default: 'monthly' }}</changefreq>
+          <priority>{{ page.sitemap.priority | default: '0.6' }}</priority>
+          
+          <!-- Alternate language versions for pages -->
+          {% for alt_lang in site.languages %}
+            <xhtml:link 
+              rel="alternate" 
+              hreflang="{{ alt_lang }}"
+              href="{% if alt_lang == site.default_lang %}{{ site.url }}{{ page.url }}{% else %}{{ site.url }}/{{ alt_lang }}{{ page.url }}{% endif %}" />
+          {% endfor %}
+          <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url }}" />
+        </url>
+      {% endunless %}
+    {% endfor %}
+  {% endfor %}
+
+  <!-- Categories and Tags for each language -->
+  {% for lang in site.languages %}
+    <!-- Categories -->
+    <url>
+      <loc>
+        {% if lang == site.default_lang %}
+          {{ site.url }}/categories/
+        {% else %}
+          {{ site.url }}/{{ lang }}/categories/
+        {% endif %}
+      </loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
+    </url>
+    
+    <!-- Tags -->
+    <url>
+      <loc>
+        {% if lang == site.default_lang %}
+          {{ site.url }}/tags/
+        {% else %}
+          {{ site.url }}/{{ lang }}/tags/
+        {% endif %}
+      </loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
+    </url>
+    
+    <!-- Archives -->
+    <url>
+      <loc>
+        {% if lang == site.default_lang %}
+          {{ site.url }}/archives/
+        {% else %}
+          {{ site.url }}/{{ lang }}/archives/
+        {% endif %}
+      </loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  {% endfor %}
+
+</urlset>

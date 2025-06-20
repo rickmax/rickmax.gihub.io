@@ -3,8 +3,14 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
-# The language of the webpage
+# Multi-language configuration
+languages: ["pt", "en"]
+default_lang: "pt"
 lang: pt-BR
+
+# Collections for multilingual content (moved to bottom)
+
+# Defaults moved to bottom with other defaults
 
 # Change to your timezone
 timezone: America/Sao_Paulo
@@ -142,6 +148,13 @@ pwa:
 
 paginate: 5
 
+# Multi-language sitemap
+sitemap:
+  priority: 1.0
+  changefreq: monthly
+  exclude:
+    - "/404.html"
+
 # The base URL of your site
 baseurl: ""
 
@@ -162,6 +175,9 @@ collections:
   tabs:
     output: true
     sort_by: order
+  en_posts:
+    output: true
+    permalink: /en/posts/:name/
 
 defaults:
   - scope:
@@ -184,6 +200,12 @@ defaults:
     values:
       layout: page
       permalink: /:title/
+  - scope:
+      path: "_en_posts"
+      type: "en_posts"
+    values:
+      layout: "post"
+      lang: "en"
 
 sass:
   style: compressed

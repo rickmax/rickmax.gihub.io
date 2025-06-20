@@ -50,6 +50,18 @@
 
   {{ seo_tags }}
 
+  <!-- Multi-language SEO -->
+  {% if site.languages.size > 1 %}
+    {% for lang in site.languages %}
+      {% if lang == site.default_lang %}
+        <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}{{ page.url }}" />
+      {% else %}
+        <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}{{ page.url }}" />
+      {% endif %}
+    {% endfor %}
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url }}" />
+  {% endif %}
+
   <title>
     {%- unless page.layout == 'home' -%}
       {{ page.title | append: ' | ' }}

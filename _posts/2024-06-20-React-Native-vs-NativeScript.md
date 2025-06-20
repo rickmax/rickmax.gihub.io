@@ -36,8 +36,8 @@ import { View, Text, TouchableOpacity } from 'react-native';
 const MeuBotao = ({ onPress, titulo }) => {
   return (
     <TouchableOpacity onPress={onPress}>
-      <View style={{ padding: 10, backgroundColor: '#007AFF' }}>
-        <Text style={{ color: 'white' }}>{titulo}</Text>
+      <View style={% raw %}{{ padding: 10, backgroundColor: '#007AFF' }}{% endraw %}>
+        <Text style={% raw %}{{ color: 'white' }}{% endraw %}>{titulo}</Text>
       </View>
     </TouchableOpacity>
   );
