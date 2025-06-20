@@ -11,6 +11,7 @@ Sou **Henrique Max**, desenvolvedor apaixonado por tecnologia e trading.
 ## 🚀 **O que faço**
 
 - **Desenvolvimento Web**: Ruby on Rails, Python, Elixir
+- **Desenvolvimento Mobile**: React Native, NativeScript
 - **Trading Automatizado**: Desenvolvimento de bots para Forex usando MQL4/MQL5
 - **Análise de Dados**: Python para análise de mercado
 - **Desenvolvimento Desktop**: Aplicações desktop para trading
@@ -18,7 +19,7 @@ Sou **Henrique Max**, desenvolvedor apaixonado por tecnologia e trading.
 ## 💼 **Experiência**
 
 Trabalhando no mercado desde **2014** com:
-- Aplicações web e desktop
+- Aplicações web, mobile e desktop
 - Otimização de performance
 - Design de interfaces
 - Automação de processos
@@ -26,6 +27,8 @@ Trabalhando no mercado desde **2014** com:
 ## 🎯 **Especialidades**
 
 - **Ruby on Rails**: Desenvolvimento web robusto
+- **React Native**: Aplicações mobile cross-platform
+- **NativeScript**: Apps nativas para iOS e Android
 - **Python**: Análise de dados e automação
 - **Elixir**: Sistemas distribuídos e concorrentes
 - **MQL4/MQL5**: Trading automatizado para Forex
