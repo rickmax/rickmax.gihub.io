@@ -5,28 +5,43 @@ categories: [Ruby, Rails]
 tags: [ruby, rails, desenvolvimento, tutorial]
 ---
 
-Este post é para ajudar aqueles que como eu teve muitos problema para iniciar nessa maravilhosa linguagem.
+## Por onde começar com Ruby on Rails?
 
-<p style="text-align: justify;">O objetivo aqui não é um tutorial sobre instalação e utilização da linguagem mas sim direcionar para isso.
-O primeiro passo que indico é assistir aula do <b><a href="https://www.youtube.com/user/jacksonpiresjr">Professor Jackson Pires</a></b>, foi de grande ajuda para meu crescimento
-  nessa caminhada.</p>
+Se você está pensando em aprender Ruby on Rails, parabéns! Você está prestes a entrar em um dos ecossistemas mais produtivos e amigáveis do mundo do desenvolvimento web. Mas, como todo início, podem surgir dúvidas e dificuldades. Este post é para ajudar quem está começando e quer evitar os principais obstáculos.
 
-**Algumas ferramentas de ajuda indispensáveis para resolução de problemas**
+### 1. O que é Ruby on Rails?
 
-  * stackoverflow.com
-  * github.com
-  * rubygems.org
-  * rubyonrails.org
+Ruby on Rails (ou simplesmente Rails) é um framework para desenvolvimento de aplicações web escrito em Ruby. Ele segue o princípio de "convenção sobre configuração", o que significa que você pode ser produtivo rapidamente, mesmo sem conhecer todos os detalhes do framework.
 
-`Nunca se esqueça da documentação oficial, é muito mais esclarecedor.`
+### 2. Primeiros Passos
 
-Dicas pessoais para te poupar tempo:
+- **Aprenda Ruby:** Antes de mergulhar no Rails, é fundamental ter uma boa base em Ruby. Recomendo o [Try Ruby](https://try.ruby-lang.org/) e a [documentação oficial](https://www.ruby-lang.org/pt/).
+- **Assista aulas de qualidade:** O canal do [Professor Jackson Pires](https://www.youtube.com/user/jacksonpiresjr) no YouTube é excelente para iniciantes. Ele explica de forma clara e didática.
 
-> Se você esta pensando em trabalhar com Windows, esqueça, até o momento nem com W10 tive um bom desempenho.<br>
-> Existem muitos bugs do ambiente de desenvolvimento em windows que podem prejudicar seu entendimento inicial.<br>
-> Se você como eu não tem a possibilidade no início de adquirir um Mac, não pense duas vezes use Linux e seja feliz!<br>
-> Recentimente, no W10 foi incluído o Bash do Ubunto Trusty, já testei, funciona, porém ainda é muito lento.<br>
-> Uma outra opção é a utilzação do Vagrant, fica um pouco mais rápido. <b><a href="https://nandovieira.com.br/usando-o-vagrant-como-ambiente-de-desenvolvimento-no-windows"> 
-  Usando O Vagrant no Windows, com Nando Vieira<br>
+### 3. Ferramentas Indispensáveis
 
-Estes foram os meus passos, logicamente existem vários outros muito bons, mas espero estes ajude você.☺
+- [Stack Overflow](https://stackoverflow.com/)
+- [GitHub](https://github.com/)
+- [RubyGems](https://rubygems.org/)
+- [Ruby on Rails Guides](https://guides.rubyonrails.org/)
+
+> **Dica:** Nunca subestime o poder da documentação oficial. Ela é sua melhor amiga!
+
+### 4. Ambiente de Desenvolvimento
+
+- **Evite Windows:** Minha experiência mostra que o desenvolvimento em Rails no Windows pode ser frustrante devido a bugs e incompatibilidades. Se possível, use Linux ou macOS.
+- **Linux é seu aliado:** Se não pode investir em um Mac, o Linux é uma excelente opção para programar em Rails.
+- **Vagrant:** Se você precisa usar Windows, considere o [Vagrant](https://nandovieira.com.br/usando-o-vagrant-como-ambiente-de-desenvolvimento-no-windows) para criar um ambiente Linux virtualizado.
+- **WSL:** O Windows 10 trouxe o WSL (Windows Subsystem for Linux), que permite rodar um terminal Linux no Windows. É uma alternativa, mas pode ser mais lento.
+
+### 5. Dicas Finais
+
+- Pratique sempre! O segredo para aprender Rails (e qualquer tecnologia) é colocar a mão na massa.
+- Participe de comunidades, fóruns e grupos de estudo.
+- Compartilhe suas dúvidas e conquistas.
+
+---
+
+Espero que essas dicas ajudem você a dar os primeiros passos com Ruby on Rails. Se tiver dúvidas, deixe um comentário ou entre em contato!
+
+Boas codificações! 🚀

@@ -30,8 +30,7 @@ social:
   links:
     - https://twitter.com/Rique_Max
     - https://github.com/rickmax
-    - https://www.facebook.com/henrique.max.73
-    - https://www.linkedin.com/in/henrique-max-321040a3
+    - https://www.linkedin.com/in/rickmaxg3/
 
 # Site Verification Settings
 webmaster_verifications:
@@ -96,11 +95,8 @@ sidebar:
       - title: Twitter
         url: https://twitter.com/Rique_Max
         icon: fab fa-twitter
-      - title: Facebook
-        url: https://www.facebook.com/henrique.max.73
-        icon: fab fa-facebook
       - title: LinkedIn
-        url: https://www.linkedin.com/in/henrique-max-321040a3
+        url: https://www.linkedin.com/in/rickmaxg3/
         icon: fab fa-linkedin
       - title: Email
         url: mailto:rickmaxg3@hotmail.com
@@ -126,7 +122,7 @@ comments:
     strict: # optional, default to '0'
     input_position: # optional, default to 'bottom'
     lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+    reactions_enabled: # optional, default to the '1'
 
 # Self-hosted static assets, optional
 assets:

@@ -1,7 +1,6 @@
 ---
-title: Sobre
-icon: fas fa-info-circle
-order: 4
+title: Sobre Mim
+permalink: /about/
 ---
 
 ## Olá! 👋
@@ -35,8 +34,7 @@ Trabalhando no mercado desde **2014** com:
 
 - [GitHub](https://github.com/rickmax)
 - [Twitter](https://twitter.com/Rique_Max)
-- [LinkedIn](https://www.linkedin.com/in/henrique-max-321040a3)
-- [Facebook](https://www.facebook.com/henrique.max.73)
+- [LinkedIn](https://www.linkedin.com/in/rickmaxg3/)
 
 ## 📧 **Contato**
 
