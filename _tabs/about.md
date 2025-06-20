@@ -1,6 +1,7 @@
 ---
-title: Sobre Mim
-permalink: /about/
+title: Sobre
+icon: fas fa-info-circle
+order: 4
 ---
 
 ## Olá! 👋
