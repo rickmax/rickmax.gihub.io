@@ -4,6 +4,7 @@ icon: fas fa-info-circle
 order: 4
 lang: en
 permalink: /en/about/
+layout: page
 ---
 
 ## Hello! 👋

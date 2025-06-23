@@ -3,19 +3,37 @@ layout: page
 # All the Tags of posts.
 ---
 
+{% include lang.html %}
+
+{% if lang == 'en' %}
+  {% assign posts_collection = site.en_posts %}
+{% else %}
+  {% assign posts_collection = site.posts %}
+{% endif %}
+
 <div id="tags" class="d-flex flex-wrap mx-xl-2">
-  {% assign tags = '' | split: '' %}
-  {% for t in site.tags %}
-    {% assign tags = tags | push: t[0] %}
+  {% comment %} Build tags manually for the appropriate collection {% endcomment %}
+  {% assign tags_hash = '' | split: '' %}
+  {% for post in posts_collection %}
+    {% for tag in post.tags %}
+      {% assign tags_hash = tags_hash | push: tag %}
+    {% endfor %}
   {% endfor %}
 
-  {% assign sorted_tags = tags | sort_natural %}
+  {% assign unique_tags = tags_hash | uniq | sort_natural %}
 
-  {% for t in sorted_tags %}
+  {% for tag in unique_tags %}
+    {% assign posts_count = 0 %}
+    {% for post in posts_collection %}
+      {% if post.tags contains tag %}
+        {% assign posts_count = posts_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    
     <div>
-      <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
-        {{ t -}}
-        <span class="text-muted">{{ site.tags[t].size }}</span>
+      <a class="tag" href="{{ tag | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
+        {{ tag -}}
+        <span class="text-muted">{{ posts_count }}</span>
       </a>
     </div>
   {% endfor %}

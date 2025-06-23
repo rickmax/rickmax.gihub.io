@@ -10,11 +10,47 @@ layout: page
 
 {% assign group_index = 0 %}
 
-{% assign sort_categories = site.categories | sort %}
+{% if lang == 'en' %}
+  {% assign posts_collection = site.en_posts %}
+{% else %}
+  {% assign posts_collection = site.posts %}
+{% endif %}
 
-{% for category in sort_categories %}
-  {% assign category_name = category | first %}
-  {% assign posts_of_category = category | last %}
+{% comment %} Build categories manually for the appropriate collection {% endcomment %}
+{% assign categories_hash = '' | split: '' %}
+{% for post in posts_collection %}
+  {% for category in post.categories %}
+    {% assign categories_hash = categories_hash | push: category %}
+  {% endfor %}
+{% endfor %}
+
+{% assign unique_categories = categories_hash | uniq | sort %}
+{% assign categories_with_posts = '' | split: '' %}
+
+{% for category in unique_categories %}
+  {% assign posts_in_category = '' | split: '' %}
+  {% for post in posts_collection %}
+    {% if post.categories contains category %}
+      {% assign posts_in_category = posts_in_category | push: post %}
+    {% endif %}
+  {% endfor %}
+  {% assign category_data = category | append: '|' | append: posts_in_category.size %}
+  {% assign categories_with_posts = categories_with_posts | push: category_data %}
+{% endfor %}
+
+{% assign sort_categories = categories_with_posts | sort %}
+
+{% for category_data in sort_categories %}
+  {% assign category_parts = category_data | split: '|' %}
+  {% assign category_name = category_parts[0] %}
+  
+  {% assign posts_of_category = '' | split: '' %}
+  {% for post in posts_collection %}
+    {% if post.categories contains category_name %}
+      {% assign posts_of_category = posts_of_category | push: post %}
+    {% endif %}
+  {% endfor %}
+  
   {% assign first_post = posts_of_category | first %}
 
   {% if category_name == first_post.categories[0] %}
@@ -45,7 +81,7 @@ layout: page
           <a href="{{ _category_url | relative_url }}" class="mx-2">{{ category_name }}</a>
 
           <!-- content count -->
-          {% assign top_posts_size = site.categories[category_name] | size %}
+          {% assign top_posts_size = posts_of_category | size %}
           <span class="text-muted small font-weight-light">
             {% if sub_categories_size > 0 %}
               {{ sub_categories_size }}
@@ -109,7 +145,12 @@ layout: page
                 {% capture _sub_ctg_url %}/categories/{{ sub_category | slugify | url_encode }}/{% endcapture %}
                 <a href="{{ _sub_ctg_url | relative_url }}" class="mx-2">{{ sub_category }}</a>
 
-                {% assign posts_size = site.categories[sub_category] | size %}
+                {% assign posts_size = 0 %}
+                {% for post in posts_collection %}
+                  {% if post.categories contains sub_category %}
+                    {% assign posts_size = posts_size | plus: 1 %}
+                  {% endif %}
+                {% endfor %}
                 <span class="text-muted small font-weight-light">
                   {{ posts_size }}
 

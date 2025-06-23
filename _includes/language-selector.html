@@ -1,9 +1,18 @@
 <!-- Language Selector -->
 <div class="language-selector">
   {% if page.url contains '/en/' %}
-    <a href="/" class="lang-btn">🇧🇷 PT</a>
+    {% assign pt_url = page.url | remove: '/en' %}
+    {% if pt_url == '' or pt_url == '/' %}
+      {% assign pt_url = '/' %}
+    {% endif %}
+    <a href="{{ pt_url }}" class="lang-btn">🇧🇷 PT</a>
   {% else %}
-    <a href="/en/" class="lang-btn">🇺🇸 EN</a>
+    {% if page.url == '/' %}
+      {% assign en_url = '/en/' %}
+    {% else %}
+      {% assign en_url = '/en' | append: page.url %}
+    {% endif %}
+    <a href="{{ en_url }}" class="lang-btn">🇺🇸 EN</a>
   {% endif %}
 </div>
 

@@ -11,15 +11,31 @@
 
 {% assign SEPARATOR = ':' %}
 
+{% if include.lang == 'en' %}
+  {% assign posts_collection = site.en_posts %}
+{% else %}
+  {% assign posts_collection = site.posts %}
+{% endif %}
+
 {% assign match_posts = '' | split: '' %}
 
 {% for category in page.categories %}
-  {% assign match_posts = match_posts | push: site.categories[category] | uniq %}
+  {% for post in posts_collection %}
+    {% if post.categories contains category %}
+      {% assign match_posts = match_posts | push: post %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}
 
 {% for tag in page.tags %}
-  {% assign match_posts = match_posts | push: site.tags[tag] | uniq %}
+  {% for post in posts_collection %}
+    {% if post.tags contains tag %}
+      {% assign match_posts = match_posts | push: post %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}
+
+{% assign match_posts = match_posts | uniq %}
 
 {% assign match_posts = match_posts | reverse %}
 {% assign last_index = match_posts.size | minus: 1 %}
