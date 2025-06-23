@@ -95,4 +95,7 @@ comments:
 theme_mode:
   light: "Modo Claro"
   dark: "Modo Escuro"
-  auto: "Automático" 
+  auto: "Automático"
+
+# Footer meta (empty to remove "Made with Jekyll using Chirpy theme")
+meta: "" 
