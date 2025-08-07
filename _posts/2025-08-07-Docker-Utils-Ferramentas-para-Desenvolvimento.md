@@ -1,6 +1,6 @@
 ---
 title: Docker Utils - Ferramentas Essenciais para Desenvolvimento
-date: 2025-01-15 00:00:00 +0000
+date: 2025-08-07 00:00:00 +0000
 categories: [Docker, DevOps, Desenvolvimento]
 tags: [docker, docker-compose, desenvolvimento, banco-dados, redis, postgresql, mysql, mongodb]
 ---
