@@ -177,7 +177,7 @@ collections:
     sort_by: order
   en_posts:
     output: true
-    permalink: /en/posts/:name/
+    permalink: /en/posts/:title/
 
 defaults:
   - scope:
